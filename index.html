@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jonah Rey</title>
-    <link rel="icon" href="https://img.icons8.com/?size=100&id=qMTApFtREytE&format=png&color=000000">
+    <link rel="icon" href="https://img.icons8.com/?size=48&id=9NeHyDUhD1AF&format=png&color=000000">
     
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -84,7 +84,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const emojiContainer = document.getElementById('emoji-container');
-            const emojiCount = 40;
+            const emojiCount = 20;
             for (let i = 0; i < emojiCount; i++) {
                 const emoji = document.createElement('div');
                 emoji.classList.add('emoji');
@@ -92,8 +92,8 @@
                 emoji.style.left = `${Math.random() * 100}vw`;
                 emoji.style.fontSize = `${Math.random() * 1 + 1.25}rem`;
                 emoji.style.animationDuration = `${Math.random() * 5 + 8}s`;
-                emoji.style.animationDelay = `${Math.random() * 15}s`;
-                emoji.style.opacity = 0.7;
+                emoji.style.animationDelay = `${i/2}s`;
+                emoji.style.opacity = 0.5;
                 emojiContainer.appendChild(emoji);
             }
         });
